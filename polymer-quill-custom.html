@@ -76,7 +76,7 @@ Custom property | Description | Default
 @demo demo/index.html
 -->
 
-<dom-module id="polymer-quill">
+<dom-module id="polymer-quill-custom">
   <template>
     <style include="polymer-quill-styles-snow">
       :host {
@@ -110,17 +110,10 @@ Custom property | Description | Default
         <select class="ql-size"></select>
       </span>
       <span class="ql-formats">
-        <select class="ql-header">
-          <option value="1">Header 1</option>
-          <option value="2">Header 2</option>
-          <option value="3">Header 3</option>
-          <option value="7">Normal</option>
-        </select>
-      </span>
-      <span class="ql-formats">
         <button class="ql-bold" title="Bold"></button>
         <button class="ql-italic" title="Italic"></button>
         <button class="ql-underline" title="Underline"></button>
+        <button class="ql-strike" title="Strike"></button>
       </span>
       <span class="ql-formats">
         <select class="ql-color" title="Text Color"></select>
@@ -156,7 +149,7 @@ Custom property | Description | Default
   <script>
     Polymer({
 
-      is: 'polymer-quill',
+      is: 'polymer-quill-custom',
 
       /**
         * Fired when element is attached.
